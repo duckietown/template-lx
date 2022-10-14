@@ -1,5 +1,5 @@
-Duckietown Module: REPOSITORY_NAME_HERE
-=======================================
+Packages
+========
 
 .. toctree::
    :glob:

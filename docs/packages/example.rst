@@ -1,6 +1,6 @@
-Python Package: example
-=======================
+Documentation: example
+======================
 
 .. contents::
 
-TODO: This is a placeholder description of the Python Package.
+Write your documentation here.

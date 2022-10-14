@@ -1,25 +1,28 @@
 docs_config_version: v1
 
 # CONFIGURE THESE TO MATCH YOUR PROJECT:
-project: "REPOSITORY_NAME_HERE"
+
+# TODO: these should be provided by `dts devel docs build ...`
+#project: "EXERCISE_NAME_HERE"
+#author: "YOUR_NAME_HERE"
+#version: "-"
+
 copyright: "Duckietown"
-author: "YOUR_NAME_HERE"
-version: "daffy"
-custom_sections:  [
-  "Configuration",
-  "Subscribers",
-  "Subscriber",
-  "Publishers",
-  "Publisher",
-  "Services",
-  "Service",
-  "Fields",
-  "Attribute",
-  "Attributes",
-  "inputs",
-  "input",
-  "outputs",
-  "output"
+custom_sections: [
+    "Configuration",
+    "Subscribers",
+    "Subscriber",
+    "Publishers",
+    "Publisher",
+    "Services",
+    "Service",
+    "Fields",
+    "Attribute",
+    "Attributes",
+    "inputs",
+    "input",
+    "outputs",
+    "output"
 ]
 
 # REFRAIN FROM CHANGING THESE SPHINX-SPECIFIC CONFIGURATION SETTINGS:
@@ -55,4 +58,3 @@ html_theme_options:
   navigation_depth: 4
   includehidden: False
   titles_only: False
-

@@ -1,5 +1,16 @@
 VERSION=0.0.0
 TYPE=template-exercise
-TYPE_VERSION=1
+TYPE_VERSION=3
+
+# name of the exercise
 NAME=<EXERCISE_NAME_HERE>
-RECIPE=<EXERCISE_DIR_HERE>/<EXERCISE_NAME_HERE>
+
+# recipe repository and location
+# - name of the repository, e.g., duckietown/mooc-exercises-recipe
+RECIPE_REPOSITORY_NAME=<EXERCISES_RECIPE_REPOSITORY_NAME_HERE>
+
+# - branch containing the recipe
+RECIPE_REPOSITORY_BRANCH=<EXERCISES_RECIPE_REPOSITORY_BRANCH_HERE>
+
+# - location of the recipe inside the repository/branch above
+RECIPE_DIR=<EXERCISES_RECIPE_DIRECTORY_INSIDE_REPOSITORY_HERE>

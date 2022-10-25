@@ -6,11 +6,11 @@ TYPE_VERSION=3
 NAME=<EXERCISE_NAME_HERE>
 
 # recipe repository and location
-# - name of the repository, e.g., duckietown/mooc-exercises-recipe
-RECIPE_REPOSITORY_NAME=<EXERCISES_RECIPE_REPOSITORY_NAME_HERE>
+# - fully qualified name of the recipe repository, e.g., 'duckietown/mooc-exercises-recipes'
+RECIPE_REPOSITORY=<PLACEHOLDER>
 
-# - branch containing the recipe
-RECIPE_REPOSITORY_BRANCH=<EXERCISES_RECIPE_REPOSITORY_BRANCH_HERE>
+# - branch of RECIPE_REPOSITORY containing the recipe
+RECIPE_BRANCH=<PLACEHOLDER>
 
-# - location of the recipe inside the repository/branch above
-RECIPE_DIR=<EXERCISES_RECIPE_DIRECTORY_INSIDE_REPOSITORY_HERE>
+# - location of the recipe inside the RECIPE_REPOSITORY/RECIPE_BRANCH above
+RECIPE_LOCATION=<PLACEHOLDER>

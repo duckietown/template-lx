@@ -1,7 +1,3 @@
-<p align="center">
-<img src="./assets/images/dtlogo.png" alt="Duckietown Logo" width="50%">
-</p>
-
 # **Learning Experience (LX): <LX_NAME_HERE>**
 
 # About these activities

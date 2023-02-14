@@ -3,7 +3,7 @@ TYPE=template-exercise
 TYPE_VERSION=3
 
 # name of the exercise
-NAME=<EXERCISE_NAME_HERE>
+NAME=<LX_NAME_HERE>
 
 # recipe repository and location
 # - fully qualified name of the recipe repository, e.g., 'duckietown/duckietown-lx-recipes'

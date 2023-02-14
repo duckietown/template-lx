@@ -1,6 +1,8 @@
-# **Learning Experience (LX): <LX_NAME_HERE>**
+# **Learning Experience (LX): <LX_TITLE_HERE>**
 
 # About these activities
+
+<DESCRIPTION_HERE>
 
 In this learning experience, you will ... **TODO: Describe the LX activities and outcome here**
 

@@ -1,8 +1,10 @@
 <p align="center">
-<img src="./assets/images/dtlogo.png" alt="Duckietown Logo" width="50%">
+<a href="https://duckietown.com"><img src="./assets/images/dtlogo.png" alt="Duckietown Logo" width="50%"></a>
 </p>
 
 # **Learning Experience (LX): <LX_TITLE_HERE>**
+
+Find the most up-to-date instructions on [how to run LXs on the Duckietown manual](https://docs.duckietown.com/ente/duckietown-manual/60-learning-experiences/lx-general-procedure.html). 
 
 # About these activities
 

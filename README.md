@@ -51,7 +51,7 @@ Update your LX definition and instructions,
 
   To switch to an ente profile, follow the [Duckietown Manual DTS installation instructions](https://docs.duckietown.com/ente/duckietown-manual/10-setup/02-software/duckietown-shell-dts-installation.html#dt-account-switch-profile).
 
-- 💻 Always make sure your Duckietown Shell is updated to the latest version. See [installation instructions](https://github.com/duckietown/duckietown-shell).
+- 💻 Always make sure your Duckietown Shell is updated to the latest version: `pipx upgrade duckietown-shell` (see the [installation instructions](https://github.com/duckietown/duckietown-shell)).
 
 - 💻 Update the shell commands: `dts update`
 
@@ -100,10 +100,14 @@ Follow the instructions on the notebook and work through the notebooks in sequen
 You can build your code with 
 
 ```
-dts code build -R ROBOT_NAME
+dts code build -R ROBOT_NAME [--local]
 ```
 
-This will build a Docker image with your code compiled inside - you should your ROS node get built during the process. 
+This will build a Docker image with your code inside.
+
+If `ROBOT_NAME` is a **real** Duckiebot, the image is built on the Duckiebot itself. This works, but it is slow
+(the robot has to download and install all the dependencies). Add the `--local` flag to build the image on your
+laptop instead: this is the recommended (and much faster) option. The flag is not needed for a virtual robot.
 
 ### Testing with the Duckiematrix
 
@@ -148,9 +152,9 @@ From here you can move the duckie towards the Duckiebot with the 'w', 'a', 's', 
 
 You can then drive the Duckiebot around with the 'w', 'a', 's', and 'd' keys. 
 
-If you get very lost from the road and you want to come back, you can do so with the 'R' key (note that 
-you should do this for the exercise before testing every time since the initial state estimate coincides
-with the reset position). 
+If you get very lost from the road and you want to come back, you can do so with the 'R' key.
+
+You can also switch to a top-down (overhead) view with the 'V' key.
 
 
 ### 💻 Testing 
@@ -169,13 +173,18 @@ dts code workbench -R [ROBOT_NAME]
 ```
 
 
-In another terminal, you can launch the `noVNC` viewer for this exercise which can be useful to send commands to the robot and view the odometry that you calculating in the RViZ window. 
+**TODO: Describe what the learner should see while the workbench runs, or remove this note.** Prefer
+interactive tools inside the notebooks (e.g., `ipywidgets` sliders and plots) over a separate desktop.
+
+**Optional (ROS 1 LXs only):** if your recipe ships a `Dockerfile.vnc` with desktop tools such as RViz or
+`rqt`, explain here what to look at, and tell the learner to launch the `noVNC` viewer in another terminal:
 
 ```
 dts code vnc -R [ROBOT_NAME]
 ```
 
 where `[ROBOT_NAME]` could be the real or the virtual robot (use whichever you ran the `dts code workbench` and `dts code build` command with).
+Remove this paragraph if your recipe does not use the desktop.
 
 
 Now you can proceed to the [first notebook](ADD_LINK_TO_NOTEBOOK).
